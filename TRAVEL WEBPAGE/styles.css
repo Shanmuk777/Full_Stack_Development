@@ -1,0 +1,207 @@
+/* General Settings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0093ad;
+    color: white;
+    padding: 15px 25px;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    background: #ff9800;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.hero button:hover {
+    background: #e68900;
+}
+
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 50px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px gray;
+}
+
+/* Pricing */
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+}
+
+.price-card {
+    background: white;
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.price-card:hover {
+    transform: scale(1.05);
+}
+
+.price-card ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.price-card li {
+    margin: 8px 0;
+}
+
+.price-card button {
+    background: #004aad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Premium Card */
+
+.premium {
+    box-shadow: 0 0 15px #ff9800;
+}
+
+.badge {
+    background: #ff9800;
+    color: white;
+    padding: 5px 10px;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+/* Footer */
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background: #004aad;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 10px;
+        border-top: 1px solid white;
+    }
+
+    #menu-toggle:checked + .menu-icon + nav {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+}
