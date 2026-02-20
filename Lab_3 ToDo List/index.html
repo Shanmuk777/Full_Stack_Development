@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart To-Do Reminder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h2>Shanmuk's Smart To-Do</h2>
+        <button id="themeBtn">🌙</button>
+    </div>
+
+    <div class="input-area">
+
+        <input type="text" id="taskInput" placeholder="Enter task">
+
+        <select id="priority">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+
+        <input type="datetime-local" id="timeInput">
+
+        <input type="tel" id="phoneInput" placeholder="Phone (optional)">
+
+        <button class="add-btn" onclick="addTask()">Add Task</button>
+
+    </div>
+
+    <div class="control-area">
+        <button class="clear-btn" onclick="clearAll()">Clear All</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
