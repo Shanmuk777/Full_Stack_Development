@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Even or Odd in Array</title>
+</head>
+<body>
+    <h2>Check Even or Odd Numbers</h2>
+    <p>Output:</p>
+    <h3 id="result"></h3>
+    <script>
+        let numbers = [12, 7, 25, 40, 9, 18, 33];
+        let output = "";
+        for (let i = 0; i < numbers.length; i++) {
+
+            if (numbers[i] % 2 === 0) {
+                console.log(numbers[i] + " is Even");
+                output += numbers[i] + " is Even<br>";
+            }
+            else {
+                console.log(numbers[i] + " is Odd");
+                output += numbers[i] + " is Odd<br>";
+            }
+        }
+        document.getElementById("result").innerHTML = output;
+    </script>
+</body>
+</html>

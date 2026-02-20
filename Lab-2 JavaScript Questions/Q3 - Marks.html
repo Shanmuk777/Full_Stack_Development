@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Object Example</title>
+</head>
+<body>
+    <h2>JavaScript Object Example</h2>
+    <p>Output:</p>
+    <h3 id="Student result"></h3>
+    <script>
+        // Create object
+        const student = {
+            name: "Shanmukeswara Reddy Medapati",
+            rollNo: 18,
+            marks: 92
+        };
+        let output = "Name: " + student.name + 
+                     "<br>Marks: " + student.marks;
+        console.log("Name:", student.name);
+        console.log("Marks:", student.marks);
+
+        // Display on webpage
+        document.getElementById("Student result").innerHTML = output;
+    </script>
+
+</body>
+</html>

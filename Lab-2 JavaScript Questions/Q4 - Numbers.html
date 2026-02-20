@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array Example</title>
+</head>
+<body>
+
+    <h2>Array and Loop Example</h2>
+
+    <p>Output:</p>
+    <h3 id="result"></h3>
+
+    <script>
+        let numbers = [10, 20, 30, 40, 50];
+
+        let output = "";
+        for (let i = 0; i < numbers.length; i++) {
+            console.log(numbers[i]);  
+            output += numbers[i] + "<br>"; 
+        }
+        document.getElementById("result").innerHTML = output;
+    </script>
+
+</body>
+</html>

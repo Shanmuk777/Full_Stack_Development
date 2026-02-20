@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Number</title>
+</head>
+<body>
+    <h2>Check Positive, Negative, or Zero</h2>
+    <p>Output:</p>
+    <h3 id="Result"></h3>
+
+    <script>
+        let num = -5;
+
+        let message = "";
+        if (num > 0) {
+            message = "The Entered Number is Positive";
+        }
+        else if (num < 0) {
+            message = "The Entered Number is Negative";
+        }
+        else {
+            message = "The Entered Number is Zero";
+        }
+        console.log(message);
+        document.getElementById("Result").innerHTML = message;
+    </script>
+
+</body>
+</html>
